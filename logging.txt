@@ -1,0 +1,46 @@
+Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "Insert your Jira username here",
+    "password": "Insert your Jira password here"
+}
+HTTP/1.1 401 
+X-AREQUESTID: 1165x242x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=B1BQ-PXD3-BZO0-1BMT_e62d1cc536628f14666ae04f35cd1dd5e0a1ce26_lout; Path=/
+X-AUSERNAME: anonymous
+X-Seraph-LoginReason: AUTHENTICATED_FAILED
+WWW-Authenticate: JIRA REST POST
+Cache-Control: no-cache, no-store, no-transform
+WWW-Authenticate: OAuth realm="http%3A%2F%2Flocalhost%3A8080"
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 16 Feb 2023 11:25:45 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "errorMessages": [
+        "Login failed"
+    ],
+    "errors": {
+        
+    }
+}

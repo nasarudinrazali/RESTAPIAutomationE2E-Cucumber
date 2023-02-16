@@ -1,0 +1,81 @@
+-------------------------------------------------------------------------------
+Test set: cucumber.Options.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 1, Errors: 4, Skipped: 0, Time elapsed: 4.281 s <<< FAILURE! - in cucumber.Options.TestRunner
+Validating Jira APIs E2E.Verify user can successfully log in  Time elapsed: 2.945 s  <<< FAILURE!
+java.lang.AssertionError: expected:<401> but was:<200>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:647)
+	at org.junit.Assert.assertEquals(Assert.java:633)
+	at stepDefinitions.StepDefinition.api_call_is_successful_with_status_code(StepDefinition.java:85)
+	at ✽.API call is successful with status code "200"(file:///C:/Users/60113/eclipse-workspace/JIRA_API_Automation/src/test/java/features/endToEnd.feature:7)
+
+Validating Jira APIs E2E.Verify issue is succesfully created  Time elapsed: 0.044 s  <<< ERROR!
+java.lang.IllegalArgumentException: Header value cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
+	at stepDefinitions.StepDefinition.create_issue_payload_with(StepDefinition.java:105)
+	at ✽.create issue payload with "TES" "REST sample issue" "Good morning mate" "Bug"(file:///C:/Users/60113/eclipse-workspace/JIRA_API_Automation/src/test/java/features/endToEnd.feature:15)
+
+Validating Jira APIs E2E.Verify comment is added to existing issue  Time elapsed: 0.022 s  <<< ERROR!
+java.lang.IllegalArgumentException: Header value cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
+	at stepDefinitions.StepDefinition.add_comment_payload_with(StepDefinition.java:129)
+	at ✽.add Comment payload with "Submit button cannot be clicked" "role" "Administrators"(file:///C:/Users/60113/eclipse-workspace/JIRA_API_Automation/src/test/java/features/endToEnd.feature:27)
+
+Validating Jira APIs E2E.Verify new comment is updated to existing issue  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.IllegalArgumentException: Header value cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
+	at stepDefinitions.StepDefinition.update_comment_payload_with(StepDefinition.java:152)
+	at ✽.update comment Payload with "update comment"  "role" "Administrators"(file:///C:/Users/60113/eclipse-workspace/JIRA_API_Automation/src/test/java/features/endToEnd.feature:38)
+
+Validating Jira APIs E2E.Verify existing issue is successfully deleted  Time elapsed: 0.014 s  <<< ERROR!
+java.lang.IllegalArgumentException: Header value cannot be null
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
+	at stepDefinitions.StepDefinition.delete_issue_api(StepDefinition.java:163)
+	at ✽.delete issue API(file:///C:/Users/60113/eclipse-workspace/JIRA_API_Automation/src/test/java/features/endToEnd.feature:48)
+
