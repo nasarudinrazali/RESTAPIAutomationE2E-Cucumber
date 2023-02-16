@@ -41,7 +41,7 @@ Scenario Outline: Verify new comment is updated to existing issue
 	
 Examples:
 	|	         body                  | type | value          |
-	|				update comment           | role | Administrators |
+	|	update comment                 | role | Administrators |
 
 
 Scenario Outline: Verify existing issue is successfully deleted
