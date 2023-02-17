@@ -9,10 +9,11 @@ You can view the test scenarios in .feature file.
 
 Precondition: Java and Maven have been installed in your computer
 
-1) Insert your Jira username and password .feature file and save.
+1) Insert your Jira username and password in .feature file and save.
 2) Open terminal
 3) Go to the project directory in the terminal
 4) Type "mvn test verify" and hit enter.
+5) To view the test result, go to "target" folder to open Cucumber reports.
 
 
 
