@@ -9,8 +9,8 @@ You can view the test scenarios in .feature file.
 
 Precondition: Java and Maven have been installed in your computer
 
-1) Insert your Jira url in global.properties file
-2) Insert your Jira username and password in .feature file and save.
+1) Insert your Jira url in global.properties file and save
+2) Insert your Jira username and password in Endtoend.feature file and save.
 4) Open terminal
 3) Go to the project directory in the terminal
 5) Type "mvn test verify" and hit enter.
