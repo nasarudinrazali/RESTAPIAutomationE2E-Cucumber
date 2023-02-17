@@ -1,5 +1,5 @@
 
-**This API Automation Framework is created using Java, Junit, Cucumber and it also supports Cucumber Reporting. This framework is built to test Jira APIs.**
+**This API Automation Framework is created using Java, Gherkin, Junit and Cucumber. It also supports Cucumber Reporting. This framework is built to test Jira APIs.**
 
 **There is an end to end test stored in this Framework. The test covers the login of Jira account > Creating an issue in Jira project > Add comment to the existing issue > Update comment to the existing issue > Delete the existing issue.**
 .
