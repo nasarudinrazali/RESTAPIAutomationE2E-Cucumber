@@ -7,7 +7,7 @@ You can view the test scenarios in .feature file.
 
 **How to run the test:**
 
-Precondition: Java and Maven have been installed in your computer
+Precondition: Java and Maven have been installed in your system
 
 1) Insert your Jira url in global.properties file and save
 2) Insert your Jira username and password in Endtoend.feature file and save.
